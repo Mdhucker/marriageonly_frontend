@@ -8,6 +8,8 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import MembershipModal from "./components/MembershipModal";
+import { User } from "lucide-react";
+import { CircleUser } from "lucide-react";
 
 
 const content = {
@@ -142,10 +144,10 @@ useEffect(() => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0F1710] text-[#F5F5F0] font-sans antialiased selection:bg-[#D4AF37]/20 overflow-x-hidden relative">
+    <div className="min-h-screen bg-[#0F1710]  text-[#F5F5F0] font-sans antialiased selection:bg-[#D4AF37]/20 overflow-x-hidden relative">
       
       {/* Top Bar */}
-      <div className="bg-[#1A2A1C] text-[#D4C78A] py-3 px-5 text-xs font-semibold uppercase tracking-wide border-b border-[#D4C78A]/20">
+      <div className="bg-[#1A2A1C]  text-[#D4C78A] py-3 px-5 text-xs font-semibold uppercase tracking-wide border-b border-[#D4C78A]/20">
         <div className="max-w-9xl mx-auto flex justify-between items-center">
           <span className="flex items-center gap-2">
             <Sparkles size={14} /> Serious Unions Only • East Africa & Diaspora
@@ -165,7 +167,7 @@ useEffect(() => {
   className={`sticky top-0 z-50 transition-all duration-500 ${
     scrolled
       ? "bg-[#0F1710]/95 backdrop-blur-xl shadow-2xl py-5 border-b border-[#D4C78A]/20"
-      : "bg-transparent py-6"
+      : "bg-transparent py-2"
   }`}
 >
   <div className="max-w-8xl mx-auto px-5 flex items-center justify-between">
@@ -230,28 +232,40 @@ useEffect(() => {
 
 
       {/* Sign In Button */}
-      <Link to="/membershipForm">
-        <motion.button
-          whileHover={{
-            scale: 1.05,
-            backgroundColor: "#D4C78A",
-            color: "#0F1710",
-            boxShadow: "0 0 25px rgba(212,199,138,0.4)",
-          }}
-          className="border border-[#D4C78A]/60 text-[#D4C78A] px-7 py-2.5 rounded hover:bg-[#D4C78A]/10 transition-all shadow-md"
-        >
-          Sign In
-        </motion.button>
-      </Link>
+<Link to="/membershipForm">
+  <motion.button
+    whileHover={{ backgroundColor: "rgba(212,199,138,0.12)" }}
+    whileTap={{ scale: 0.98 }}
+    className="
+      flex items-center gap-2
+      border border-[#D4C78A]/60
+      text-[#D4C78A]
+      px-5 py-2
+      rounded-full
+      text-sm font-medium
+      transition-colors
+      hover:bg-[#D4C78A]/10
+      active:bg-[#D4C78A]/20
+    "
+  >
+    <CircleUser size={16} />
+    Sign in
+  </motion.button>
+</Link>
+
+
     </div>
+
   </div>
+    <hr className="my-2 border-t border-[#D4C78A]/40" />
+
 </nav>
 
 
       {/* Hero – text left-aligned on lg+, image full size & responsive */}
       <motion.section 
         style={{ opacity: heroOpacity }} 
-        className="pt-2 pb-24 px-5 md:px-8 relative overflow-hidden min-h-[80vh] flex items-center"
+        className="pt- pb-24  px-5 md:px-8 relative overflow-hidden min-h-[80vh] flex items-center"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#0F1710] via-transparent to-[#0F1710]/80 pointer-events-none" />
 
@@ -320,10 +334,10 @@ useEffect(() => {
             className="relative order-1 lg:order-2"
           >
             <img
-              src="https://t4.ftcdn.net/jpg/18/47/06/21/240_F_1847062157_Tw7qk8wbBb2Hj9dutAUotfyIzzbDD9Em.jpg"
+              src="https://media.gettyimages.com/id/1174343525/photo/when-two-hearts-became-one.jpg?s=612x612&w=0&k=20&c=BNXU1LdSt2t4f3j7-SvYt761E3ghXTRiAZU_XzVxktM="
               // Replace with your own photo URL
               alt="Serious East African matrimonial alliance – lifelong commitment"
-              className="w-full h-auto min-h-[400px] z-40 lg:min-h-[600px] object-cover lg:rounded-2xl shadow-2xl  lg:border-4 border-[#D4C78A]/40 transition-all duration-500"
+              className="w-full h-aut min-h-[400px] z-40 lg:min-h-[600px] object-cover lg:rounded-2xl shadow-2xl   transition-all duration-500"
               loading="lazy"
             />
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#0F1710]/70 via-transparent to-transparent/40 pointer-events-none" />
