@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+body.modal-open {
+  padding-right: 15px; /* scrollbar width */
+}
