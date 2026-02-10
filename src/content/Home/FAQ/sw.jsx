@@ -1,26 +1,26 @@
 // File: sw.js
 const sw = {
-  faqTitle: "Maswali Yanayoulizwa Mara kwa Mara",
+  faqTitle: "Maswali Yanayoulizwa Mara Kwa Mara",
   faq: [
     {
-      q: "Jinsi gani ninaweza kuomba uanachama?",
-      a: "Unaweza kuomba kwa kujaza fomu yetu mtandaoni na kuwasilisha nyaraka zinazohitajika. Timu yetu itahakikisha taarifa zote ili kuhakikisha mchakato ni wa dhati na salama."
+      q: "Kwa nini Ndoa Africa ni bora zaidi ikilinganishwa na tovuti nyingine za ndoa?",
+      a: "Ndoa Africa inajitofautisha kama jukwaa kiongozi la upatanishi barani Afrika lenye hadithi nyingi za mafanikio, kinachothibitisha uaminifu na ufanisi wake. Tofauti na tovuti za ndoa za kawaida, Ndoa Africa inatoa wasifu uliothibitishwa, huduma za upatanishi za kibinafsi, na zana za utafutaji za kisasa zinazosaidia watumiaji kupata wapenzi wanaofaa kwa urahisi na kwa kujiamini. Kuzingatia usalama, ukweli, na uhusiano wa maana kunafanya iwe chaguo la kwanza kwa watu na familia zinazojitolea."
     },
     {
-      q: "Je, Ndoa Africa ni bure?",
-      a: "Uanachama unahitaji usajili wa malipo ili kuhakikisha washiriki wote ni wa dhati na wamehakikishwa. Hii husaidia kudumisha uaminifu na imani kwenye jukwaa."
+      q: "Je, Ndoa Africa ni jukwaa la kuaminika la upatanishi?",
+      a: "Ndiyo, Ndoa Africa ni jukwaa la kuaminika sana la upatanishi. Kwa mchakato mkali wa kuthibitisha wasifu, hatua madhubuti za usalama, na hadithi nyingi za mafanikio, Ndoa Africa inahakikisha uzoefu salama na wa kuaminika. Tofauti na tovuti za ndoa za kawaida, inatoa mbinu ya kisasa na ya kibinafsi ya kupata mpenzi anayefaa."
     },
     {
-      q: "Je, wanajamii wa diaspora wanaweza kujiunga?",
-      a: "Ndiyo! Ndoa Africa inaunga mkono wanajamii kutoka kote Afrika na diaspora, ikiwaleta pamoja watu na familia wenye nia ya dhati."
+      q: "Je, kuna tofauti gani kati ya Uanachama wa Bure na Uanachama wa Kulipia?",
+      a: "Uanachama wa Bure unaruhusu mtumiaji kuunda wasifu, kuvinjari wasifu wengine, na kutuma nia za kimsingi. Hata hivyo, Uanachama wa Kulipia hutoa mengi zaidi. Kulingana na aina ya usajili, watumiaji wanaweza kuanzisha na kujibu ujumbe, kutumia vichujio vya utafutaji vya juu, kupata huduma ya wateja ya kipaumbele, kuongeza mwonekano wa wasifu, na kupata taarifa za mawasiliano ya wanachama waliovutiwa, kufanya urahisi wa kupata mpenzi sahihi."
     },
     {
-      q: "Je, mchakato wa uhakiki ni salama?",
-      a: "Bila shaka. Mchakato wetu wa uhakiki unahakikisha uhalisi wa wasifu wote huku ukihifadhi taarifa zako binafsi kwa usalama na faragha."
+      q: "Faida za ziada za Uanachama wa Premium ni zipi?",
+      a: "Wanachama wa Premium wanapata faida nyingi zaidi kama vile kuanzisha na kujibu ujumbe, kutumia vichujio vya utafutaji vya juu, huduma ya wateja ya kipaumbele, kuongeza mwonekano wa wasifu, na kupata taarifa za mawasiliano ya wanachama waliovutiwa. Vipengele hivi vinaboresha uwezekano wako wa kupata mpenzi anayefaa kwa haraka na kwa ufanisi."
     },
     {
-      q: "Je, inachukua muda gani kupata mlingano?",
-      a: "Baada ya uhakiki kufanikiwa, muda wa kupata mlingano unaweza kutofautiana kulingana na vipaumbele, lakini mfumo wetu unahakikisha utambulisho wa dhati na unaofaa."
+      q: "Je, ninawezaje kuwasiliana na wanachama wengine kwenye Ndoa Africa?",
+      a: "Kwa Uanachama wa Premium, unaweza kuzungumza na kufanya video call kwenye jukwaa, pamoja na kupata maelezo ya mawasiliano ya wanachama waliovutiwa ili kuendeleza mazungumzo. Hii inahakikisha uhusiano wa maana huku ukidumisha faragha na usalama."
     }
   ]
 };

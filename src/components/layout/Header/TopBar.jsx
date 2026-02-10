@@ -19,7 +19,7 @@ const TopBar = () => {
 
           <button 
             onClick={() => setLang(lang === 'en' ? 'sw' : 'en')} 
-            className="flex items-center gap-2 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#D4C78A]/50 rounded"
+            className="flex items-center gap-2 hover:text-white transition-colors focus:outline-none "
           >
             <Globe size={14} />
             {lang === 'en' ? 'English' : 'Kiswahili'} <ChevronDown size={12} />
