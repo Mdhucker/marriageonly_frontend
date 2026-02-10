@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 
-body.modal-open {
-  padding-right: 15px; /* scrollbar width */
+html {
+  scrollbar-gutter: stable;
+}
+
+html, body, #root {
+  background-color: #0F1710;
+  overscroll-behavior: none;
 }
