@@ -1,6 +1,12 @@
+
+
 import { Fingerprint, Users, Landmark } from "lucide-react";
 
 const en = {
+featuresTitle: "Marriage with Integrity and Purpose",
+
+featuresSubtitle: "A trustworthy, faith-driven matchmaking system that honors family involvement, verified identity, and the pursuit of a stable, lifelong Nikah.",
+experience:"Experience meaningful, faith-driven connections today.",
   features: [
     { 
       title: "Verified Identity", 

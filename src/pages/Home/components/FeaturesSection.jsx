@@ -9,8 +9,24 @@ const FeaturesSection = () => {
   const t = languages[lang]?.features || languages.en.features; // ✅ get features for current language
 
   return (
-    <section className="py-20 px-5 bg-[#0F1710]">
+    <section className="py-20 px-5 bg-gradient-to-b from-[#0F1710] to-[#0A120B]">
       <div className="max-w-5xl mx-auto">
+
+   
+        {/* Title */}
+<div className="text-center mb-10">
+  <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#F5F5F0] mb-4 tracking-tight">
+    {t.featuresTitle}
+  </h2>
+
+  <p className="text-xl md:text-2xl text-[#D4C78A]/90 max-w-3xl mx-auto leading-relaxed font-light">
+    {t.featuresSubtitle}
+    <br className="hidden sm:block" />
+    <span className="italic">{t.experience}</span>
+  </p>
+</div>
+
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-sm font-semibold uppercase tracking-widest text-[#D4C78A] mb-4">

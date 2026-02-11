@@ -72,7 +72,7 @@ const FAQSectionMultilang = () => {
   }, [faqItems]);
 
   return (
-    <section className="py-12 px-5 bg-[#1A2A1C]/30">
+    <section className="py-12 px-5 bg-gradient-to-b from-[#0F1710] to-[#0A120B]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-center mb-8 md:mb-10 text-[#F5F5F0]">
           {t.faqTitle || "FAQ"}
