@@ -29,8 +29,11 @@ import enStrictPolicy from "./Home/StrictPolicy/en";
 import swStrictPolicy from "./Home/StrictPolicy/sw";
 
 
-import enInfo from "./Home/InfoToast/en";
+import enInfo from "./Home/InfoToast/en"; // the message that float at righ conner
 import swInfo from "./Home/InfoToast/sw";
+
+import enTestmonial from "./Home/Testmonial/en";
+import swTestmonial from "./Home/Testmonial/sw";
 
 export const languages = {
   en: {
@@ -45,6 +48,7 @@ export const languages = {
     features: enFeatures, 
      strictPolicy: enStrictPolicy,
     infoToast: enInfo,
+    testmonial: enTestmonial,
 
 
   },
@@ -60,6 +64,8 @@ export const languages = {
     features: swFeatures,
     strictPolicy: swStrictPolicy,
     infoToast: swInfo,
+     testmonial: swTestmonial,
+
 
   },
 };

@@ -2,6 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "../../../context/LanguageContext";
+import { languages } from "../../../content";
 
 const testimonials = [
   {
@@ -22,6 +24,10 @@ const testimonials = [
 ];
 
 const TestimonialSection = () => {
+
+     const { lang } = useLanguage();
+      const t = languages[lang]?.testmonial || languages.en.strictPolicy;
+    
   return (
     <section className="py-16 px-5 bg-[#1A2A1C]/40">
       <div className="max-w-6xl mx-auto text-center">
@@ -33,14 +39,25 @@ const TestimonialSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#F5F5F0] mb-4 tracking-tight">
+          {/* <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#F5F5F0] mb-4 tracking-tight">
             Real Stories, True Connections
           </h2>
           <p className="text-xl md:text-2xl text-[#D4C78A]/90 max-w-3xl mx-auto leading-relaxed font-light">
             Discover how Ndoa Africa has brought families together through meaningful values, faith, and lifelong commitments.
             <br className="hidden sm:block" />
             <span className="italic">Your success story could be next...</span>
-          </p>
+          </p> */}
+
+<h2 className="text-4xl md:text-5xl font-serif font-bold text-[#F5F5F0] mb-4 tracking-tight">
+  {t.storiesTitle}
+</h2>
+
+<p className="text-xl md:text-2xl text-[#D4C78A]/90 max-w-3xl mx-auto leading-relaxed font-light">
+  {t.storiesDesc}
+  <br className="hidden sm:block" />
+  <span className="italic">{t.storiesHighlight}</span>
+</p>
+
         </motion.div>
 
         {/* Testimonial Cards */}

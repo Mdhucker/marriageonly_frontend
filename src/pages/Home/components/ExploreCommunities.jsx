@@ -11,7 +11,7 @@ const ExploreCommunities = () => {
     <section className="py-16 px-5 bg-[#1A2A1C]/60">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-serif mb-8 text-[#F5F5F0]">
-          {t.exploreBy}
+          {t.community}
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
           {(t.communities || []).map((comm, i) => (

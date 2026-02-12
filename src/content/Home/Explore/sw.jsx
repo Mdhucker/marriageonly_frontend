@@ -1,16 +1,18 @@
+// File: sw.js
 const sw = {
-  exploreBy: "Gundua Profaili za Ndoa Kulingana na",
+  community: "Huduma za Ndoa kwa Jamii",
+
   communities: [
-    "Watanzania",
-    "Wakenya",
-    "Wauganda",
-    "Wasomali",
-    "Waswahili wa Pwani",
+    "Kitanzania",
+    "Kikenya",
+    "Kiuuganda",
+    "Kisosomaali",
+    "Zanzibar",
+    "Waislamu",
     "Wakristo",
-    "Waislam",
     "Kabila za Milima",
-    "Diaspora",
-    "Mikoa Mengine"
+    "Diaspora ya Afrika",
+    "Mikoa Mingine ya Afrika"
   ]
 };
 

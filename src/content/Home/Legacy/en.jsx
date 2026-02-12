@@ -1,7 +1,7 @@
 const en = {
   marriageLegacy: {
-    heading: "Preserving the Sacred Legacy of East African Marriage",
-    intro: "For generations, families across East Africa have upheld the values of intentional, faith-based unions. Ndoa Africa honors this legacy by connecting individuals and families with serious intent, ensuring that marriage remains meaningful, secure, and aligned with cultural and spiritual traditions.",
+    heading: "Preserving the Sacred Legacy of African Marriage",
+    intro: "For generations, families across Africa have upheld the values of intentional, faith-based unions. Ndoa Africa honors this legacy by connecting individuals and families with serious intent, ensuring that marriage remains meaningful, secure, and aligned with cultural and spiritual traditions.",
 
     coreDescription: [
       "Ndoa Africa bridges the gap between tradition and modern matchmaking. We combine technology with human insight to maintain the sanctity and seriousness of marriage.",

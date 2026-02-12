@@ -1,16 +1,18 @@
+// File: en.js
 const en = {
-  exploreBy: "Explore Matrimonial Profiles By",
+  community: "Community Matrimony Services",
+
   communities: [
     "Tanzanian",
     "Kenyan",
     "Ugandan",
     "Somali",
-    "Coastal Swahili",
-    "Christian",
+    "Zanziabar",
     "Muslim",
+    "Christian",
     "Highland Tribes",
-    "Diaspora",
-    "More Regions"
+    "African Diaspora",
+    "Other African Regions"
   ]
 };
 
