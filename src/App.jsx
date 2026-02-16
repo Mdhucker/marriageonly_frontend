@@ -5,7 +5,7 @@ import MembershipForm from "./pages/MembershipForm/MembershipForm";
 import { LanguageProvider } from "./context/LanguageContext"; // <-- import your provider
 import BrowseProfiles from "./pages/BrowseProfiles/BrowseProfiles";
 import ProfileView from "./pages/ProfileView/ProfileView"; // individual profile page
-
+import AboutUs from "./pages/AboutUs/AboutUs";
 function App() {
   return (
     <LanguageProvider>
@@ -18,7 +18,7 @@ function App() {
 
         {/* Individual profile view */}
         <Route path="/profile/:id" element={<ProfileView />} />
-
+          <Route path="/about-us" element={<AboutUs />} />
       </Routes>
     </LanguageProvider>
   );

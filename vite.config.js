@@ -22,7 +22,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/marriageonly-frontend/",   // 👈 VERY IMPORTANT
+  // base: "/marriageonly-frontend/",   // 👈 VERY IMPORTANT
   plugins: [
     react({
       babel: {

@@ -5,8 +5,8 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaMosque } from "react-icons/fa";
 import Header from "../../components/layout/Header/Header";
-import Footer from "../../components/layout/Footer"
-
+import Footer from "../../components/layout/Footer";
+import UpgradeModalBase from '../../components/modal/BaseModal'; // adjust path
 import {
   Heart,
   MapPin,
@@ -777,6 +777,31 @@ const BrowseProfiles = () => {
     );
   };
 
+
+  
+
+
+
+  // ... your existing states ...
+const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+
+// Fake membership check (replace with real auth later)
+const isPremium = false; // ← change to true when user is paid
+
+// Handler for "Interest" button
+const handleSendInterest = () => {
+  if (!isPremium) {
+    setShowUpgradeModal(true);
+    return;
+  }
+  
+  // If premium → send interest logic here
+  alert("Interest sent successfully! (connect to backend)");
+};
+
+
+
+
   return (
     <>
    
@@ -1040,13 +1065,39 @@ const BrowseProfiles = () => {
                   </p>
 
                   <div className="flex gap-3">
-                    <button className="flex-1 py-3 bg-[#d4c78a]/10 hover:bg-[#d4c78a]/20 border border-[#d4c78a]/30 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm">
+                    {/* <button className="flex-1 py-3 bg-[#d4c78a]/10 hover:bg-[#d4c78a]/20 border border-[#d4c78a]/30 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm">
                       <Heart size={18} />
                       Interest
                     </button>
-                    {/* <button className="flex-1 py-3 bg-gradient-to-r from-[#d4c78a] to-[#e0d4a0] text-[#0f1710] font-semibold rounded-xl shadow-lg hover:shadow-[#d4c78a]/40 transition-all flex items-center justify-center gap-2 text-sm">
-                      View Profile
-                    </button> */}
+                   */}
+
+                   {/* Interest Button */}
+<button
+  onClick={handleSendInterest}
+  className="flex-1 py-3 bg-[#d4c78a]/10 hover:bg-[#d4c78a]/20 border border-[#d4c78a]/30 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm"
+>
+  <Heart size={18} />
+  Interest
+</button>
+
+    {/* Upgrade Modal - appears when non-premium clicks */}
+    <UpgradeModalBase
+      isOpen={showUpgradeModal}
+      onClose={() => setShowUpgradeModal(false)}
+      title="Send Interest & Connect"
+      subtitle="Upgrade to Premium to send interest and view full contact details"
+      benefits={[
+        "Send unlimited interests to compatible matches",
+        "View full education, occupation & family background",
+        "See detailed personal & religious preferences",
+        "Access location, photos & contact information",
+        "Direct messaging & priority visibility",
+      ]}
+      ctaText="Upgrade to Premium Now"
+      ctaLink="/pricing" // or your membership page route
+    />
+
+
 
                     <button 
   onClick={() => window.location.href = `/profile/${profile.id}`}
