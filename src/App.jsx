@@ -6,6 +6,10 @@ import { LanguageProvider } from "./context/LanguageContext"; // <-- import your
 import BrowseProfiles from "./pages/BrowseProfiles/BrowseProfiles";
 import ProfileView from "./pages/ProfileView/ProfileView"; // individual profile page
 import AboutUs from "./pages/AboutUs/AboutUs";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
+// import AuthSuccess from "./pages/AuthSuccess/AuthSuccess";
+import AuthSuccess from "./pages/AuthSuccess/AuthSuccess";
+
 function App() {
   return (
     <LanguageProvider>
@@ -19,6 +23,9 @@ function App() {
         {/* Individual profile view */}
         <Route path="/profile/:id" element={<ProfileView />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/error" element={<ErrorPage />} />
+          <Route path="/auth/success" element={<AuthSuccess />} />
+
       </Routes>
     </LanguageProvider>
   );

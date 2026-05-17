@@ -88,7 +88,17 @@ const navLinks = t.navLinks;
             </motion.a>
           ))}
 
-          <Link to="/membershipForm">
+
+          <button 
+            onClick={() => {
+                    window.location.href = "http://localhost:5174/central-login?app=marriage-africa";
+
+                  }}
+
+          // to="/membershipForm"
+          >
+
+                
             <motion.button
               whileHover={{ backgroundColor: "rgba(212,199,138,0.12)" }}
               whileTap={{ scale: 0.98 }}
@@ -96,7 +106,7 @@ const navLinks = t.navLinks;
             >
               <CircleUser size={16} /> {t.signInText || "Sign In"}
             </motion.button>
-          </Link>
+          </button>
         </div>
 
         <button
@@ -128,7 +138,15 @@ const navLinks = t.navLinks;
               </a>
             ))}
 
-            <Link to="/membershipForm">
+
+          <button 
+            onClick={() => {
+                    window.location.href = "http://localhost:5174/central-login?app=marriage-africa";
+
+                  }}
+
+          // to="/membershipForm"
+          >
               <motion.button
                 whileHover={{ backgroundColor: "rgba(212,199,138,0.12)" }}
                 whileTap={{ scale: 0.98 }}
@@ -136,7 +154,7 @@ const navLinks = t.navLinks;
               >
                 <CircleUser size={16} /> {t.signInText || "Sign In"}
               </motion.button>
-            </Link>
+            </button>
           </motion.div>
         )}
       </AnimatePresence>
